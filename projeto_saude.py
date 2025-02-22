@@ -20,8 +20,10 @@ def verMenu():
     print("|6-saida{} |".format("  "*21))
     print("+{}+".format("-"*50))
  
-def calcularIMC():
-    ...
+
+def calcularIMC(peso,altura):
+    return peso/(altura**2)
+    
 
 
 
@@ -32,7 +34,7 @@ infoUser = {}
 while True:
     verMenu()
     print("\n")
-    opc = (int(input(f"{' ':^13}Digite a opção desejada: ")))
+    opc = ((input(f"{' ':^13}Digite a opção desejada: ")))
     if opc =="1":
         print("\n")
         print("{}".format("="*50))
@@ -53,7 +55,7 @@ while True:
 
         print(f"Nome: {nome}")
         print(f"Data de Nascimento: {idade}")
-        print(f"Peso (kg): {peso:.23f}")
+        print(f"Peso (kg): {peso:.2f}")
         print(f"Altura (m): {altura:.2f}")
     elif opc == "3":
         if not infoUser:  # Se infoUser estiver vazio, o usuário ainda não cadastrou nada
@@ -159,14 +161,37 @@ while True:
                 print("Gordura:      gramas {:.2f}, calorias {:.0f}".format(gramas_gordura,calorias_gorduras))
                 print("")
     elif opc == "4":
-        ...
+        imc = calcularIMC(peso,(altura))
+
+        print(" ")
+
+        print("    ->  {}, Seu Indice de Massa Corporal é   | {:.2f} |" .format(nome, imc))
+
+        print("")
+
+        if imc <16:
+            print(f"    -> Atenção {nome}! Você está com magreza grave")
+        elif  16<= imc < 17:
+            print(f"    -> {nome} Você está com magreza moderada")
+        elif  17<= imc <18.5:
+            print(f"    ->  {nome} Você está com magreza leve")
+        elif 18.5<= imc <25:
+            print(f"    -> {nome} Que bom! Você está saudável")
+        elif 25<= imc <30:
+            print(f"    -> {nome} Você está com sobrepeso")
+        elif 30<= imc <35:
+            print(f"    -> ATENÇÃO {nome}! Você está com obesidade grau 1")
+        elif 35<= imc <40:
+            print(f"    -> ATENÇÃO {nome}! Você está com obesidade grau 2")
+        elif imc >40:
+            print(f"    -> ATENÇÃO {nome}! Você está com obesidade grau 3")
 
     elif opc == "5":
         ...
     elif opc == "6":
         print("{:^550}".format("OBRIGADO PELA PREFERENCIA"))
         break
-    elif opc not in [1,2,3,4,5,6]:
+    elif opc not in ['1','2','3','4','5','6']:
         print("\n")
         print("{}".format("="*52))
         print("{:^50}".format("Digito Invalido"))
