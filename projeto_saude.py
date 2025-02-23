@@ -42,7 +42,7 @@ while True:
         print("{}".format("="*50))
 
         nome = input("Nome: ")   
-        idade = input("Idade: ")
+        idade = int(input("Idade: "))
         peso = float(input("Peso (kg): "))
         altura = float(input("Altura (m): "))
         sexo = input("Digite o seu sexo('h'= Homem/'m'= Mulher)  ->     ").lower()
