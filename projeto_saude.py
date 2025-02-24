@@ -192,79 +192,79 @@ while True:
         
     elif opc == "5":
         def exibir_tabela():
-    print("                                 DICAS NUTRICIONAIS DO DIA À DIA SAUDÁVEL.")
-    print("="*113)
-    print("  >  Antes de começarmos, selecione uma categoria. Você poderá escolher se quer continuar ou não.")
-    print("="*113)
-    print("   >  a =  Dicas de Alimentação Saudável")
-    print("   >  b =  Dicas de Bebidas e Hidratação")
-    print("   >  g =  Dicas para Ganho de Peso")
-    print("   >  p =  Dicas para Perda de Peso")
-    print("   >  h =  Dicas de Hábitos e Rotina Nutricional")
-    print("   >  e =  Para Encerrar as Dicas")
-    print("="*113)
+            print("                                 DICAS NUTRICIONAIS DO DIA À DIA SAUDÁVEL.")
+            print("="*113)
+            print("  >  Antes de começarmos, selecione uma categoria. Você poderá escolher se quer continuar ou não.")
+            print("="*113)
+            print("   >  a =  Dicas de Alimentação Saudável")
+            print("   >  b =  Dicas de Bebidas e Hidratação")
+            print("   >  g =  Dicas para Ganho de Peso")
+            print("   >  p =  Dicas para Perda de Peso")
+            print("   >  h =  Dicas de Hábitos e Rotina Nutricional")
+            print("   >  e =  Para Encerrar as Dicas")
+            print("="*113)
 
-dicas = {
-    "a": [ "                      >      Dicas de Alimentação Saudável",
-        "Prefira alimentos naturais – Frutas, verduras, legumes e proteínas magras devem ser a base da alimentação.",
-        "Inclua fontes de fibras – Como aveia, chia, linhaça e grãos para melhorar a digestão.",
-        "Evite frituras e excesso de óleos – Prefira alimentos assados, grelhados ou cozidos no vapor.",
-        "Reduza o consumo de açúcar – Opte por adoçantes naturais como mel ou frutas.",
-        "Beba bastante água – A hidratação é fundamental para o bom funcionamento do organismo."
-    ],
-    "b": ["                       >      Dicas de Bebidas e Hidratação",
-        "Comece o dia com um copo de água para ativar o metabolismo.",
-        "Evite refrigerantes e bebidas açucaradas – Opte por sucos naturais e chás.",
-        "Beba pelo menos 2 litros de água por dia para manter o corpo hidratado.",
-        "Consuma chás diuréticos, como chá-verde e hibisco, para auxiliar na digestão.",
-        "Não exagere no café – O excesso de cafeína pode causar insônia e ansiedade."
-    ],
-    "g": ["                       >      Dicas para Ganho de Peso",
-        "Aumente a ingestão calórica com alimentos saudáveis, como oleaginosas e abacate.",
-        "Consuma proteínas em todas as refeições para ajudar no ganho de massa muscular.",
-        "Faça refeições a cada 3 horas para manter um bom aporte calórico.",
-        "Inclua shakes proteicos e vitaminas na sua dieta.",
-        "Não pule o café da manhã – É uma refeição essencial para quem quer ganhar peso."
-    ],
-    "p": ["                       >      Dicas para Perda de Peso",
-        "Pratique exercícios aeróbicos regularmente para queimar gordura.",
-        "Diminua o consumo de carboidratos refinados, como pão branco e massas.",
-        "Aumente a ingestão de proteínas para preservar a massa muscular.",
-        "Evite beliscar entre as refeições – Planeje lanches saudáveis.",
-        "Durma bem – O sono é essencial para o controle do metabolismo."
-    ],
-    "h": ["                       >      Dicas de Hábitos e Rotina nutricional",
-        "Mantenha um horário regular para as refeições.",
-        "Evite comer em frente à TV ou celular – Foque na mastigação.",
-        "Planeje suas refeições da semana para evitar escolhas ruins.",
-        "Diminua o consumo de ultraprocessados e fast food.",
-        "Crie o hábito de ler os rótulos dos alimentos antes de comprar."
-    ]
-}
+        dicas = {
+            "a": [ "                      >      Dicas de Alimentação Saudável",
+                "Prefira alimentos naturais – Frutas, verduras, legumes e proteínas magras devem ser a base da alimentação.",
+                "Inclua fontes de fibras – Como aveia, chia, linhaça e grãos para melhorar a digestão.",
+                "Evite frituras e excesso de óleos – Prefira alimentos assados, grelhados ou cozidos no vapor.",
+                "Reduza o consumo de açúcar – Opte por adoçantes naturais como mel ou frutas.",
+                "Beba bastante água – A hidratação é fundamental para o bom funcionamento do organismo."
+            ],
+            "b": ["                       >      Dicas de Bebidas e Hidratação",
+                "Comece o dia com um copo de água para ativar o metabolismo.",
+                "Evite refrigerantes e bebidas açucaradas – Opte por sucos naturais e chás.",
+                "Beba pelo menos 2 litros de água por dia para manter o corpo hidratado.",
+                "Consuma chás diuréticos, como chá-verde e hibisco, para auxiliar na digestão.",
+                "Não exagere no café – O excesso de cafeína pode causar insônia e ansiedade."
+            ],
+            "g": ["                       >      Dicas para Ganho de Peso",
+                "Aumente a ingestão calórica com alimentos saudáveis, como oleaginosas e abacate.",
+                "Consuma proteínas em todas as refeições para ajudar no ganho de massa muscular.",
+                "Faça refeições a cada 3 horas para manter um bom aporte calórico.",
+                "Inclua shakes proteicos e vitaminas na sua dieta.",
+                "Não pule o café da manhã – É uma refeição essencial para quem quer ganhar peso."
+            ],
+            "p": ["                       >      Dicas para Perda de Peso",
+                "Pratique exercícios aeróbicos regularmente para queimar gordura.",
+                "Diminua o consumo de carboidratos refinados, como pão branco e massas.",
+                "Aumente a ingestão de proteínas para preservar a massa muscular.",
+                "Evite beliscar entre as refeições – Planeje lanches saudáveis.",
+                "Durma bem – O sono é essencial para o controle do metabolismo."
+            ],
+            "h": ["                       >      Dicas de Hábitos e Rotina nutricional",
+                "Mantenha um horário regular para as refeições.",
+                "Evite comer em frente à TV ou celular – Foque na mastigação.",
+                "Planeje suas refeições da semana para evitar escolhas ruins.",
+                "Diminua o consumo de ultraprocessados e fast food.",
+                "Crie o hábito de ler os rótulos dos alimentos antes de comprar."
+            ]
+        }
 
-def exibir_dicas(categoria):
-    for dica in dicas[categoria]:
-        print("="*113)
-        print(dica)
-        print("="*113)
-        continuar = input("Quer a próxima dica? (s/n) ->  ")
-        if continuar != "s":
-            return  
+        def exibir_dicas(categoria):
+            for dica in dicas[categoria]:
+                print("="*113)
+                print(dica)
+                print("="*113)
+                continuar = input("Quer a próxima dica? (s/n) ->  ")
+                if continuar != "s":
+                    return  
 
-while True:
-    exibir_tabela()
-    opcao_dica_nutricional = input("Escolha uma categoria ->  ")
-    
-    if opcao_dica_nutricional in dicas:
-        exibir_dicas(opcao_dica_nutricional)
-    elif opcao_dica_nutricional == "e":
-        print("Obrigado por utilizar nossas dicas nutricionais! Até logo!")
-        break
-        print("")
-    else:
-        print("Opção inválida! Escolha novamente.")
-
-        print("")
+        while True:
+            exibir_tabela()
+            opcao_dica_nutricional = input("Escolha uma categoria ->  ")
+            
+            if opcao_dica_nutricional in dicas:
+                exibir_dicas(opcao_dica_nutricional)
+            elif opcao_dica_nutricional == "e":
+                print("Obrigado por utilizar nossas dicas nutricionais! Até logo!")
+                break
+                print("")
+            else:
+                print("Opção inválida! Escolha novamente.")
+        
+                print("")
             
             #Opção de Encerrar programa e Agradecimento
         
